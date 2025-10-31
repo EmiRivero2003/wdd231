@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 | Emiliano Rivero</title>
+    <meta name="description" content="Home page for the WDD 231 course by Emiliano Rivero. Includes personal info, course filter, and project links.">
+    <meta name="author" content="Emiliano Rivero">
+
+    <!-- GOOGLE FONTS -->
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+
+    <!-- SCRIPTS -->
+    <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Emiliano Rivero</h1>
+    <header class="site-header">
+        <div class="brand">
+            <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" fill="currentColor" opacity="0.15" />
+                <path d="M16 44 L32 16 L48 44 Z" fill="currentColor" />
+            </svg>
+            <span class="site-name">Emiliano Rivero</span>
+        </div>
+
+        <button id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false">☰</button>
+
+        <nav id="site-nav" class="site-nav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="chamber/" class="nav-link">Chamber Project</a>
+            <a href="final/" class="nav-link">Final Project</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Home</h1>
+
+        <section class="card about">
+            <h2>About Me</h2>
+            <p> 
+                Hi, I'm Emiliano Rivero. I study software       development and I'm passionate about web design and visual optimization.
+                This site will serve as my central hub for WDD231 projects.
+            </p>
+        </section>
+
+        <section class="card photo">
+            <h2>Student Photo</h2>
+            <figure>
+                <img src="images/emiliano-rivero.webp" alt="Photo of Emiliano Rivero" width="300" loading="lazy">
+                <figcaption>Hi! 👋</figcaption>
+            </figure>
+        </section>
+
+        <section class="card courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="CSE">CSE</button>
+                <button class="filter-btn" data-filter="WDD">WDD</button>
+            </div>
+
+            <div id="course-list" class="course-list"></div>
+
+            <p id="credits-total">Total Credits: 0</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="socials">
+            <a href="https://github.com/EmiRivero2003" target="_blank" aria-label="GitHub">🐙</a>
+            <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">💼</a>
+            <a href="https://x.com/" target="_blank" aria-label="X">❌</a>
+        </div>
+
+        <p id="copyright">© <span id="year"></span> Emiliano Rivero • Uruguay</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
