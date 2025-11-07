@@ -102,18 +102,98 @@ main h1 {
   border-color: transparent;
 }
 
-/* --- DIRECTORY GRID --- */
+/* ==============================
+   DIRECTORY CARDS
+============================== */
 #directory {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#directory.grid .member-card {
+  background-color: #111;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#directory.grid .member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* ==============================
+   IMAGES
+============================== */
+.member-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--accent, #f4b400); /* usa tu color principal */
+  background-color: #222;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.member-card img:hover {
+  transform: scale(1.05);
+  border-color: var(--cyan, #00fff2);
+}
+
+/* ==============================
+   TEXTS
+============================== */
+.member-card h2 {
+  font-family: var(--heading-font, 'Ubuntu', sans-serif);
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.member-card p {
+  color: #bbb;
+  margin: 0.25rem 0;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.member-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--cyan, #00fff2);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   LIST VIEW
+============================== */
+#directory.list {
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
-#directory.grid {
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+#directory.list .member-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
 }
 
-#directory.list {
-  grid-template-columns: 1fr;
+#directory.list .member-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
 }
 
 .card {
@@ -164,6 +244,134 @@ main h1 {
 
 .card .actions a:hover {
   background: var(--primary-dark);
+}
+
+.member-card {
+  background: var(--surface, #1e1e1e);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.03);
+}
+
+.member-card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(to right, #0b0026, #2b0076);
+  color: var(--text-light);
+  text-align: center;
+  padding: 6rem 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content h1 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  color: var(--cyan);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background: var(--violet);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: var(--cyan);
+  transform: scale(1.05);
+}
+
+/* ===== SPOTLIGHT MEMBERS ===== */
+.spotlight-section {
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 1100px;
+}
+
+.spotlight-section h2 {
+  color: var(--accent1-color, #ffcc00);
+  font-family: var(--heading-font);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.spotlight-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.spotlight-card {
+  background-color: #111;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover {
+  transform: scale(1.05);
+}
+
+.spotlight-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid var(--accent1-color, #ffcc00);
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.spotlight-card h3 {
+  font-family: var(--heading-font);
+  color: var(--cyan);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+.spotlight-card a:hover {
+  text-decoration: underline;
+}
+
+/* ===== WEATHER SECTION ===== */
+#weather-info {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+#weather-info img {
+  vertical-align: middle;
 }
 
 /* --- FOOTER --- */

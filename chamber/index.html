@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce | Home</title>
+  <meta name="description" content="Official site of the Chamber of Commerce - supporting local businesses and community growth.">
+  <meta name="author" content="Emiliano Rivero">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chamber of Commerce">
+  <meta property="og:description" content="Empowering local businesses and strengthening community connections.">
+  <meta property="og:image" content="https://emirivero2003.github.io/wdd231/chamber/images/og.jpg">
+  <meta property="og:url" content="https://emirivero2003.github.io/wdd231/chamber/index.html">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Chamber</a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to the Chamber of Commerce</h1>
+      <p>Connecting, growing, and empowering our local businesses in Montevideo.</p>
+      <a href="join.html" class="cta-btn">Join Now</a>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHT MEMBERS -->
+  <section id="spotlights" class="spotlight-section">
+    <h2>Featured Members</h2>
+    <div class="spotlight-container"></div>
+  </section>
+
+  <!-- WEATHER SUMMARY (opcional si lo pedía tu rúbrica) -->
+  <section id="weather">
+    <h2>Weather Summary</h2>
+    <p id="weather-info">Loading current weather...</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+    <p>Last Modified: <span id="last-mod"></span></p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

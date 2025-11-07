@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Rivero Tech Solutions",
+    "address": "123 Main St, Montevideo, Uruguay",
+    "phone": "+598 94 555 555",
+    "website": "https://riverotech.uy",
+    "image": "images/rivero-tech-solutions.jpg",
+    "membership": 3,
+    "description": "Providing software solutions for small businesses."
+  },
+  {
+    "name": "Golden Café",
+    "address": "Av. Italia 4500, Montevideo",
+    "phone": "+598 99 222 333",
+    "website": "https://goldencafe.uy",
+    "image": "images/golden-cafe.jpg",
+    "membership": 2,
+    "description": "A cozy café offering local coffee blends and pastries."
+  },
+  {
+    "name": "Uruguay Fitness",
+    "address": "Colonia 1050, Montevideo",
+    "phone": "+598 98 876 543",
+    "website": "https://uruguayfitness.com",
+    "image": "images/uruguay-fitness.jpg",
+    "membership": 1,
+    "description": "Helping people stay active and healthy with modern equipment."
+  }
+]
