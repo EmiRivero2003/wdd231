@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<title>Chamber of Commerce | Directory</title>
+<meta name="description" content="Business directory for the local Chamber of Commerce." />
+<meta name="author" content="Emiliano Rivero" />
+
+
+<!-- Favicon -->
+<link rel="icon" href="favicon/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Chamber of Commerce | Directory">
+<meta property="og:description" content="Connecting local businesses and supporting our community through growth and collaboration.">
+<meta property="og:image" content="https://emirivero2003.github.io/wdd231/chamber/images/og.jpg">
+<meta property="og:url" content="https://emirivero2003.github.io/wdd231/chamber/directory.html">
+<meta property="og:type" content="website">
+
+
+<!-- CSS -->
+<link rel="preload" href="styles/style.css" as="style" />
+<link rel="stylesheet" href="styles/reset.css" />
+<link rel="stylesheet" href="styles/style.css" />
+</head>
+
+
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="logo" href="index.html" aria-label="Home">Chamber</a>
+
+
+<button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+☰
+</button>
+
+
+<nav id="site-nav" class="site-nav" aria-label="Primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="directory.html" aria-current="page">Directory</a></li>
+<li><a href="join.html">Join</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="container" id="main">
+<h1>Member Directory</h1>
+
+
+<div class="view-controls" role="group" aria-label="Change view">
+<button id="btn-grid" class="chip selected" aria-pressed="true">Grid</button>
+<button id="btn-list" class="chip" aria-pressed="false">List</button>
+</div>
+
+
+<section id="directory" class="cards grid" aria-live="polite">
+<!-- Cards will be injected here by JavaScript -->
+</section>
+</main>
+
+
+<footer class="site-footer">
+</html>
