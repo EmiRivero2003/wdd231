@@ -59,7 +59,7 @@ setView('grid');
 async function loadMembers() {
   console.log("Fetching members...");
   try {
-    const response = await fetch('data/members.json');
+    const response = await fetch('https://emirivero2003.github.io/wdd231/chamber/data/members.json');
     console.log("Response status:", response.status);
 
     const members = await response.json();
