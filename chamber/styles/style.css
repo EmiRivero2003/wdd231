@@ -126,6 +126,15 @@ main h1 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
+.directory-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 3px solid var(--accent-color, gold);
+  margin-bottom: 1rem;
+}
+
 /* ==============================
    IMAGES
 ============================== */
