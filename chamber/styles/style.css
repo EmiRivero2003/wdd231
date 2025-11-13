@@ -145,7 +145,7 @@ main h1 {
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 1rem;
-  border: 3px solid var(--accent, #f4b400); /* usa tu color principal */
+  border: 3px solid var(--accent, #f4b400);
   background-color: #222;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -382,6 +382,51 @@ main h1 {
 
 #weather-info img {
   vertical-align: middle;
+}
+
+/* ===== EVENTS SECTION ===== */
+.event-section {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.event-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.event-section li {
+  margin: 0.5rem 0;
+}
+
+/* ===== FORECAST SECTION ===== */
+#forecast {
+  margin-top: 1.5rem;
+  text-align: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.forecast-day {
+  background: #111;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 120px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  color: #eee;
+}
+
+.forecast-day img
+{
+  width: 60px;
 }
 
 /* --- FOOTER --- */
