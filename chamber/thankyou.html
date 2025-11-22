@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber of Commerce | Thank You</title>
+  <meta name="description" content="Thank you for applying to join the Chamber of Commerce.">
+  <meta name="author" content="Emiliano Rivero">
+
+  <link rel="icon" href="favicon/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Chamber</a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="thankyou">
+      <h1>Thank You for Your Application!</h1>
+      <p>We have received your membership application. A chamber representative will contact you soon.</p>
+
+      <h2>Submitted Information</h2>
+      <div id="submission-details" class="submission-details">
+        <!-- Filled by JavaScript -->
+      </div>
+
+      <p><a href="index.html" class="cta-btn">Return to Home</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+    <p>Last Modified: <span id="last-mod"></span></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script>
+    // Read query parameters and display submitted data
+    const params = new URLSearchParams(window.location.search);
+
+    const firstName = params.get('firstName') || '';
+    const lastName = params.get('lastName') || '';
+    const email = params.get('email') || '';
+    const phone = params.get('phone') || '';
+    const organization = params.get('organization') || '';
+    const timestamp = params.get('timestamp') || '';
+
+    const container = document.getElementById('submission-details');
+
+    if (container) {
+      container.innerHTML = `
+        <p><strong>First Name:</strong> ${firstName}</p>
+        <p><strong>Last Name:</strong> ${lastName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Mobile Phone:</strong> ${phone}</p>
+        <p><strong>Business / Organization:</strong> ${organization}</p>
+        <p><strong>Submitted At:</strong> ${timestamp}</p>
+      `;
+    }
+  </script>
+</body>
+</html>

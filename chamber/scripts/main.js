@@ -187,3 +187,54 @@ async function loadForecast() {
 }
 
 loadForecast();
+
+// ===============================
+// Join form: timestamp
+// ===============================
+const joinTimestamp = document.getElementById('timestamp');
+if (joinTimestamp) {
+  joinTimestamp.value = new Date().toISOString();
+}
+
+// ===============================
+// Membership modals (Join page)
+// ===============================
+const modalLinks = document.querySelectorAll('.modal-link');
+const modals = document.querySelectorAll('.modal');
+
+function openModal(modal) {
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+} 
+
+function closeModal(modal) {
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+modalLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href')?.substring(1);
+    const modal = targetId ? document.getElementById(targetId) : null;
+    if (modal) {
+      openModal(modal);
+    }
+  });
+});
+
+modals.forEach(modal => {
+  const backdrop = modal.querySelector('.modal-backdrop');
+  const closeBtn = modal.querySelector('.modal-close');
+
+  backdrop?.addEventListener('click', () => closeModal(modal));
+  closeBtn?.addEventListener('click', () => closeModal(modal));
+
+  modal.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal(modal);
+    }
+  });
+});
