@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #0b0c10;
+  --accent-color: #e63946;
+  --neutral-light: #f5f5f5;
+  --secondary-dark: #1f2833;
+
+  --heading-font: "Oswald", system-ui, sans-serif;
+  --body-font: "Roboto", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--primary-color);
+  color: var(--neutral-light);
+  line-height: 1.6;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--accent-color);
+  margin-top: 0;
+}
+
+section {
+  margin-block: 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: rgba(31, 40, 51, 0.85);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.info-table thead {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+code {
+  font-family: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+figure {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 0.25rem;
+}
+
+.font-example.heading-font {
+  font-family: var(--heading-font);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.font-example.body-font {
+  font-family: var(--body-font);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
