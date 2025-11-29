@@ -669,3 +669,180 @@ footer .container {
 .modal-close:hover {
   color: #fff;
 }
+
+/* ===== Discover Page Layout ===== */
+
+.discover-page {
+  padding-block: 2rem 3rem;
+}
+
+.discover-intro {
+  margin-bottom: 2rem;
+}
+
+.discover-intro h1 {
+  font-size: clamp(1.8rem, 2.4vw, 2.4rem);
+  margin-bottom: 0.5rem;
+}
+
+.visit-message {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(255, 204, 0, 0.08);
+  border: 1px solid rgba(255, 204, 0, 0.35);
+  color: #ffcc00;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .visit-message {
+    max-width: 520px;
+  }
+}
+
+/* Grid base */
+.discover-grid {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "area1"
+    "area2"
+    "area3"
+    "area4"
+    "area5"
+    "area6"
+    "area7"
+    "area8";
+}
+
+
+/* Cards */
+.discover-card {
+  background-color: #161616;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7);
+}
+
+.discover-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.discover-card figure {
+  margin: 0 0 1rem 0;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.discover-card figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease, filter 0.35s ease, box-shadow 0.35s ease;
+}
+
+.discover-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Learn More button */
+.learn-more-btn {
+  background-color: #ffcc00;  
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Hover (only desktop) */
+@media (min-width: 640px) {
+  .learn-more-btn:hover {
+    background-color: #ffdd33;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.4);
+  }
+}
+
+/* ===== GRID TEMPLATE AREAS ===== */
+
+/* Small: 1 column (320–640px) */
+@media (max-width: 640px) {
+  .discover-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "area1"
+      "area2"
+      "area3"
+      "area4"
+      "area5"
+      "area6"
+      "area7"
+      "area8";
+  }
+}
+
+/* Medium: 2 columns (641–1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "area1 area2"
+      "area3 area4"
+      "area5 area6"
+      "area7 area8";
+  }
+}
+
+/* Large: 3 columns (1025px+) */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "area1 area2 area3 area4"
+      "area5 area6 area7 area8";
+  }
+}
+
+@media (min-width: 641px) {
+  .discover-card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .discover-card figure:hover img {
+    transform: scale(1.04);
+    filter: brightness(1.1) saturate(1.1);
+  }
+}
+
+/* Hover effect Only on desktop */
+@media (min-width: 1025px) {
+  .discover-card figure img:hover {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  }
+}
