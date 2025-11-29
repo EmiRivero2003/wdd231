@@ -46,7 +46,7 @@ export const places = [
     name: "World Trade Center Montevideo",
     address: "Luis A. de Herrera 1248, Montevideo, Uruguay",
     description: "Business hub with offices, services, and a strong corporate environment.",
-    image: "images/discover/wtc-montevideo.webp"
+    image: "images/discover/wtc-mvd.webp"
   },
   {
     id: "area8",
