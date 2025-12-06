@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivero's Motor Shop | About</title>
+    <meta name="description" content="Learn more about Rivero's Motor Shop, our story, and why we focus on high-performance cars and motorcycles.">
+    <meta name="author" content="Emiliano Rivero">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/large_style.css">
+</head>
+
+<body>
+    <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Rivero's Motor Shop logo">
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="parts.html">Parts</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT HERO -->
+     <section class="about-hero">
+        <div class="container about-hero-inner">
+            <div class="about-text">
+                <h1>About Rivero's Motor Shop</h1>
+                <p>
+                    Rivero's Motor Shop is a personal project built around a simple idea:
+                    bring together a clean, honest, and exciting way to explore high-performance
+                    cars and motorcycles online.
+                </p>
+                <p>
+                    As an enthusiast of both cars and bikes, I wanted a place where people
+                    could quickly see the most important details, compare options, and feel
+                    the passion behind every machine.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img src="images/showroom.webp" alt="Mustang Dark Horse and Ducati Pangiale Corse V4S showroom image">
+            </div>
+        </div>
+     </section>
+
+         <!-- STORY / VALUES -->
+    <section class="about-story">
+      <div class="container about-story-inner">
+        <div>
+          <h2>Our Focus</h2>
+          <p>
+            The site highlights a curated list of sports cars and motorbikes chosen
+            for performance, design, and driving experience. Each vehicle includes key
+            specs so visitors can quickly understand what makes it special.
+          </p>
+        </div>
+
+        <div>
+          <h2>Values</h2>
+          <ul class="about-values">
+            <li>Clear and honest information.</li>
+            <li>Enthusiast-level attention to detail.</li>
+            <li>Simple and fast user experience.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="about-contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Have a question about a car or bike, or want to suggest a model to add?
+          Send a message using the form below.
+        </p>
+
+        <form class="contact-form" action="form-result.html" method="get">
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-row">
+                <label for="vehicle-type">Interested in</label>
+                <select id="vehicle-type" name="vehicleType" required>
+                <option value="">Select an option</option>
+                <option value="cars">Sports cars</option>
+                <option value="bikes">Motorbikes</option>
+                <option value="both">Both cars and bikes</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <div class="about-location">
+          <h3>Location</h3>
+          <p>Montevideo, Uruguay (online showroom)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="current-year"></span> Rivero's Motor Shop</p>
+
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" type="module"></script>
+  </main>
+    
+</body>
+</html>

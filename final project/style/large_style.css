@@ -1,0 +1,71 @@
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .primary-nav {
+    position: static;      
+    display: block;
+    margin-top: 0;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .primary-nav ul {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .primary-nav li + li {
+    margin-top: 0;
+  }
+
+  /* HERO DESKTOP */
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  }
+
+  .hero {
+    padding-block: 4rem 4.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  /* SERVICES */
+  .services-grid,
+  .why-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* PARTS & UPGRADES DESKTOP GRID */
+  .parts-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* INVENTORY */
+  .inventory-filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: end;
+  }
+
+  .vehicle-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* ABOUT / CONTACT */
+  .about-hero-inner {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  }
+
+  .about-story-inner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+

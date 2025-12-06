@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivero's Motor Shop | Parts & Upgrades</title>
+
+  <meta name="description" content="Performance parts and upgrades for sports cars and motorcycles.">
+  <meta name="author" content="Emiliano Rivero">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/large_style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Rivero's Motor Shop logo">
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="parts.html" class="active">Parts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="page-padding">
+      <div class="container">
+        <h1>Performance Parts & Upgrades</h1>
+        <p class="section-subtitle">
+          High-quality components to enhance performance, durability, and driving experience.
+        </p>
+
+        <!-- JS will inject the part cards here -->
+        <div class="parts-grid" id="parts-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2025 Rivero's Motor Shop</p>
+    <div class="footer-links">
+      <a href="attributions.html">Attributions</a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/parts.js" defer></script>
+</body>
+</html>

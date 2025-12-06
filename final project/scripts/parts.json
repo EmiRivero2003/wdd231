@@ -1,0 +1,46 @@
+{
+  "parts": [
+    {
+      "id": 1,
+      "name": "Cold Air Intake",
+      "category": "Engine",
+      "image": "images/parts/air-intake.webp",
+      "description": "Increases airflow to the engine for better throttle response and a small boost in horsepower."
+    },
+    {
+      "id": 2,
+      "name": "Performance Exhaust",
+      "category": "Exhaust",
+      "image": "images/parts/exhaust.webp",
+      "description": "Lightweight exhaust for a deeper sound, reduced back pressure, and improved performance."
+    },
+    {
+      "id": 3,
+      "name": "Sport Suspension",
+      "category": "Suspension",
+      "image": "images/parts/suspension.webp",
+      "description": "Lower and stiffen your ride for sharper handling and better stability on all driving conditions."
+    },
+    {
+      "id": 4,
+      "name": "Big Brake Kit",
+      "category": "Brakes",
+      "image": "images/parts/brakes.webp",
+      "description": "Massive stopping power for high-performance cars and motorcycles."
+    },
+    {
+      "id": 5,
+      "name": "High-Performance Tires",
+      "category": "Tires",
+      "image": "images/parts/tires.webp",
+      "description": "Maximum grip, precision cornering, and improved braking under all speeds."
+    },
+    {
+      "id": 6,
+      "name": "Motorcycle Quick-Shifter",
+      "category": "Electronics",
+      "image": "images/parts/quickshifter.webp",
+      "description": "Shift gears without using the clutch for faster acceleration and smoother riding."
+    }
+  ]
+}

@@ -3,16 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rivero`s Motor Shop</title>
+    <title>Rivero's Motor Shop | Home</title>
     <meta name="description" content="Rivero's Motor Shop is an online showroom focused on high-performance sports cars and motorcycles. The name uses my last name as the brand to make the shop feel personal, trustworthy, and memorable.">
     <meta name="author" content="Emiliano Rivero">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
+    <link rel="icon" href="favicon/favicon.ico">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/large_style.css">
 </head>
+
 <body>
-    
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Rivero's Motor Shop logo">
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="parts.html">Parts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <p class="hero-kicker">high-performance vehicles</p>
+          <h1>Your Trusted Motor Shop</h1>
+          <p class="hero-subtitle">
+            Sport cars and motorcycles selected for drivers who love speed and precision.
+          </p>
+          <a href="inventory.html" class="btn btn-primary">View Inventory</a>
+        </div>
+
+        <div class="hero-media">
+          <img src="images/hero.webp" alt="sports car and sport motorcycle in a dark performance garage" class="hero-image" loading="eager" fetchpriority="high">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>What We Offer</h2>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Sports Cars</h3>
+            <p>High-performance cars with clear specs, real photos, and honest pricing.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Motorbikes</h3>
+            <p>Sport and naked bikes tuned for riders who enjoy speed and control.</p>
+          </article>
+
+          <article class="service-card">
+            <h3>Parts & Upgrades</h3>
+            <p>Essential parts and upgrades to keep your car or bike in top condition.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="container">
+        <h2>Why Rivero's Motor Shop?</h2>
+
+        <div class="why-grid">
+          <article class="why-item">
+            <h3>Clear Information</h3>
+            <p>Every vehicle includes key specs, pricing, and photos so you know exactly what you are getting.</p>
+          </article>
+
+          <article class="why-item">
+            <h3>Enthusiast Focused</h3>
+            <p>Built by a car and bike enthusiast, this shop is designed for people who truly love performance.</p>
+          </article>
+
+          <article class="why-item">
+            <h3>Simple Experience</h3>
+            <p>Clean layout, fast filters, and quick contact options keep the process simple and direct.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="current-year"></span> Rivero's Motor Shop</p>
+
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/main.js" defer></script>
 </body>
-<script src="scripts/script.js" defer></script>
 </html>

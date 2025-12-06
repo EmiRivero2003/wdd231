@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rivero's Motor Shop | Inventory</title>
+      <meta name="description" content="Browse the full inventory of sports cars and motorcycles at Rivero's Motor Shop. Filter by type, price, and model.">
+      <meta name="author" content="Emiliano Rivero">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+      <link rel="icon" href="favicon/favicon.ico">
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="stylesheet" href="style/large_style.css">
+</head>
+<body>
+   <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <img src="images/logo.webp" alt="Rivero's Motor Shop logo">
+      </a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html" class="active">Inventory</a></li>
+          <li><a href="parts.html">Parts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  
+  <main>
+    <main>
+    <section class="inventory">
+      <div class="container inventory-inner">
+
+        <header class="inventory-header">
+          <h1>Inventory</h1>
+          <p>Filter cars and motorbikes by type, price, and model.</p>
+        </header>
+
+        <!-- FILTERS -->
+        <section class="inventory-filters" aria-label="Inventory filters">
+          <div class="filter-group">
+            <label for="filter-type">Type</label>
+            <select id="filter-type" name="type">
+              <option value="all">All vehicles</option>
+              <option value="car">Cars</option>
+              <option value="bike">Motorbikes</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-sort">Sort by</label>
+            <select id="filter-sort" name="sort">
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="year-desc">Year: Newer First</option>
+              <option value="year-asc">Year: Older First</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-search">Search model</label>
+            <input id="filter-search" type="search" name="search" placeholder="Search by model or brand">
+          </div>
+        </section>
+
+        <!-- VEHICLE GRID -->
+        <section class="inventory-grid" aria-live="polite">
+          <div id="vehicle-grid" class="vehicle-grid">
+            
+          </div>
+
+          <p id="no-results" class="no-results" hidden>
+            No vehicles match your filters. Try adjusting your search.
+          </p>
+        </section>
+
+      </div>
+    </section>
+
+    <div id="vehicle-modal" class="modal" hidden>
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+
+            <img id="modal-image" class="modal-image">
+
+            <h2 id="modal-title"></h2>
+            <p id="modal-year" class="modal-year"></p>
+            <p id="modal-price" class="modal-price"></p>
+
+            <p id="modal-description" class="modal-description">
+            </p>
+        </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="current-year"></span> Rivero's Motor Shop</p>
+
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/inventory.js" type="module"></script>
+</body>
+</html>

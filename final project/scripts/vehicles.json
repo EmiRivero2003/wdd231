@@ -1,0 +1,139 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "type": "car",
+      "brand": "Porsche",
+      "model": "911 GT3 RS",
+      "year": 2022,
+      "price": 245000,
+      "image": "images/gt3rs.webp"
+    },
+    {
+      "id": 2,
+      "type": "car",
+      "brand": "Aston Martin",
+      "model": "DB11",
+      "year": 2021,
+      "price": 205000,
+      "image": "images/db11.webp"
+    },
+    {
+      "id": 3,
+      "type": "car",
+      "brand": "Nissan",
+      "model": "GT-R NISMO",
+      "year": 2020,
+      "price": 155000,
+      "image": "images/nissangtr.webp"
+    },
+    {
+      "id": 4,
+      "type": "car",
+      "brand": "Ford",
+      "model": "Mustang Dark Horse",
+      "year": 2024,
+      "price": 85000,
+      "image": "images/darkhorse.webp"
+    },
+    {
+      "id": 5,
+      "type": "car",
+      "brand": "Chevrolet",
+      "model": "Corvette C8",
+      "year": 2023,
+      "price": 98000,
+      "image": "images/c8.webp"
+    },
+    {
+      "id": 6,
+      "type": "bike",
+      "brand": "Ducati",
+      "model": "Panigale V4S",
+      "year": 2023,
+      "price": 33000,
+      "image": "images/v4s.webp"
+    },
+    {
+      "id": 7,
+      "type": "bike",
+      "brand": "Yamaha",
+      "model": "R1 YZF",
+      "year": 2022,
+      "price": 26000,
+      "image": "images/r1.webp"
+    },
+    {
+      "id": 8,
+      "type": "bike",
+      "brand": "BMW",
+      "model": "S1000RR",
+      "year": 2023,
+      "price": 29000,
+      "image": "images/s1000rr.webp"
+    },
+    {
+      "id": 9,
+      "type": "bike",
+      "brand": "Honda",
+      "model": "CBR1000RR-R",
+      "year": 2021,
+      "price": 24000,
+      "image": "images/cbr.webp"
+    },
+    {
+      "id": 10,
+      "type": "car",
+      "brand": "Toyota",
+      "model": "Supra GR",
+      "year": 2022,
+      "price": 62000,
+      "image": "images/supra.webp"
+    },
+    {
+      "id": 11,
+      "type": "car",
+      "brand": "Audi",
+      "model": "R8 V10",
+      "year": 2020,
+      "price": 180000,
+      "image": "images/r8.webp"
+    },
+    {
+      "id": 12,
+      "type": "bike",
+      "brand": "Kawasaki",
+      "model": "ZX-10R",
+      "year": 2022,
+      "price": 21000,
+      "image": "images/zx10r.webp"
+    },
+    {
+      "id": 13,
+      "type": "car",
+      "brand": "Mercedes-AMG",
+      "model": "GT R",
+      "year": 2020,
+      "price": 162000,
+      "image": "images/amg.webp"
+    },
+    {
+      "id": 14,
+      "type": "car",
+      "brand": "Lamborghini",
+      "model": "Huracán EVO",
+      "year": 2021,
+      "price": 260000,
+      "image": "images/huracan.webp"
+    },
+    {
+      "id": 15,
+      "type": "bike",
+      "brand": "Aprilia",
+      "model": "RSV4 Factory",
+      "year": 2023,
+      "price": 31000,
+      "image": "images/rsv4.webp"
+    }
+  ]
+}
